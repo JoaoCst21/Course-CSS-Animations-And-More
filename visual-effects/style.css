@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: solid 5px black;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.box-shadow {
+  /*box-shadow: black 1rem 1rem;*/
+  /*box-shadow: black 1rem 1rem 1rem 1rem;*/
+  /*box-shadow: black 1rem 1rem 1rem 1rem inset;*/
+  /*box-shadow: black 1rem 1rem 1rem inset;*/
+  box-shadow: black 1rem 1rem 1rem;
+  text-shadow: black .7rem .3rem .15rem;
+}
+
+.box-shadow-multiple {
+  box-shadow: black 1rem 1rem 1rem, deepskyblue 1rem 1rem 1rem inset;
+  text-shadow: black .7rem .3rem .15rem, blue -.7rem -.3rem .15rem;
+}
+
+.box-drop-shadow {
+  filter: drop-shadow(1rem 1rem 1rem red);
+}
+
+.box-drop-shadow-img img {
+  width: 80%;
+  filter: drop-shadow(1rem 1rem 1rem red);
+}
+
+.linear-gradient {
+  /*background-image: linear-gradient(to left bottom, red, green);*/
+  /*background-image: linear-gradient(to right, red calc(100% / 3), white calc(100% / 3), white calc(100% / 1.5), green calc(-100% / 6));*/
+  background-image: linear-gradient(to right, red calc(100% / 3), white calc(100% / 3), green calc(100% / 1.5));
+}
+
+.radial-gradient {
+  /*background-image: radial-gradient(cyan, magenta);*/
+  /*background-image: radial-gradient(cyan, magenta, black);*/
+  /*background-image: radial-gradient(cyan, magenta, black, white);*/
+  /*background-image: radial-gradient(2rem, cyan, magenta, black, white);*/
+  /*background-image: radial-gradient(2rem, cyan, magenta, black);*/
+  /*background-image: radial-gradient(5rem, cyan 30%, magenta 80%, black, purple, white);*/
+  /*background-image: radial-gradient(5rem at top, cyan 30%, magenta 80%, black, purple, white);*/
+  /*background-image: radial-gradient(ellipse, cyan 30%, magenta 80%, black, purple, white);*/
+  /*background-image: radial-gradient(ellipse 5rem 3rem, magenta, black, purple, white);*/
+  background-image: radial-gradient(5rem 3rem, magenta, black, purple, white);
+}
+
+
+.conic-gradient {
+  /*background-image: conic-gradient(red, green);*/
+  /*background-image: conic-gradient(red, green, white, black, purple, orange, skyblue);*/
+  /*background-image: conic-gradient(red 0% 25%, green 50%, black 70%, white 85%);*/
+  /*background-image: conic-gradient(from 180deg, red 0% 25%, green 50%, black 70%, white 85%);*/
+  background-image: conic-gradient(from 90deg, red 0% 25%, green 50%, black 70%, white 85%);
+}
+
+.repeat-gradient-linear {
+  /*background-image: repeating-linear-gradient(red 7px, blue 15px 20px, green 30px 35px);*/
+  background-image: repeating-linear-gradient(red 7px, blue 15px 20px, green 30px);
+}
+
+.repeat-gradient-radial {
+  background-image: repeating-radial-gradient(red 10px, blue 20px 25px, pink 40px 47px);
+}
+
+.repeat-gradient-conic {
+  background-image: repeating-conic-gradient(blue 0% 10%, green 15% 22%, white 26% 28%);
+  /*background-image: repeating-conic-gradient(blue, green, white);*/
+}
+
+h3, h2 {
+  text-align: center;
+}
+
+.chart-gradient {
+  background-image: conic-gradient(from 180deg, cyan 0 50%, magenta 50% 80%, green 80%);
+  border-radius: 50%;
+}
+
+.donut-gradient {
+  background-image: radial-gradient(yellow 40%, black 41%, transparent 40%), conic-gradient(from 180deg, cyan 0 50%, magenta 50% 80%, green 80%);
+  border-radius: 50%;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border: solid 5px black;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.filter, .filter-multiples {
+  width: 100%;
+  height: 100%;
+}
+
+.filter {
+  /*filter: blur(1rem);*/
+  /*filter: brightness(0.5);*/
+  /*filter: brightness(4);*/
+  /*filter: contrast(0.3);*/
+  /*filter: contrast(3);*/
+  /*filter: grayscale(1);*/
+  /*filter: sepia(1);*/
+  /*filter: hue-rotate(30deg);*/
+  /*filter: hue-rotate(60deg);*/
+  /*filter: hue-rotate(90deg);*/
+  /*filter: hue-rotate(120deg);*/
+  /*filter: hue-rotate(330deg);*/
+  /*filter: hue-rotate(180deg);*/
+  /*filter: invert(.4);*/
+  /*filter: invert(1);*/
+  /*filter: opacity(0.5);*/
+  filter: saturate(6);
+}
+
+.filter-multiples {
+  filter: blur(.2rem) invert(1) opacity(.9) sepia(.3);
+}
+
+.relative {
+  position: relative;
+}
+
+.backdrop-filter {
+  background-color: rgba(0, 100, 200, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative img {
+  filter: blur(0) opacity(.9) sepia(.3);
+}
+
+.backdrop-filter h4 {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: sepia(1) blur(.2rem);
+}
+
