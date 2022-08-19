@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body, h1, h2 {
+  margin: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: .25rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.header a {
+  margin: 0 1rem;
+  color: skyblue;
+}
+
+.header a:hover {
+  color: deeppink;
+}
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  color: white;
+  background-color: deepskyblue;
+}
+
+.slide:nth-child(odd) {
+  background-color: green;
+}
+
+[id] {
+  scroll-margin-top: 7ex;
+}
