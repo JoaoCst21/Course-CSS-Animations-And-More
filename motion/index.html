@@ -6,62 +6,132 @@
 	<title>Movimientos CSS</title>
 </head>
 <body>
-	<h1>Movimiento en CSS</h1>
-	<hr>
-	<section class="transitions">
-		<h2>Transiciones</h2>
-		<div class="box"></div>
-		<article class="card">
+<h1>Movimiento en CSS</h1>
+<hr>
+<section class="transitions">
+	<h2>Transiciones</h2>
+	<div class="box"></div>
+	<article class="card">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
+</section>
+<hr>
+<section class="transforms">
+	<h2>Transformaciones</h2>
+	<h3>Transformaciones 2D</h3>
+	<article class="card transform-2D">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
+	<h3>Transformaciones 3D</h3>
+	<article class="card transform-3D">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
+	<h3>Origen de la transformacion</h3>
+	<article class="card transform-origin">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
+	<h3>Flip Cards</h3>
+	<article class="flip-card-1">
+		<div class="flip-face flip-front">
 			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
-	</section>
-	<hr>
-	<section class="transforms">
-		<h2>Transformaciones</h2>
-		<h3>Transformaciones 2D</h3>
-		<article class="card transform-2D">
+		</div>
+		<div class="flip-face flip-back">
+			<img src="https://picsum.photos/300/201" alt="Random Photo">
+		</div>
+	</article>
+	<article class="flip-card-2">
+		<div class="flip-face flip-front">
 			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
-		<h3>Transformaciones 3D</h3>
-		<article class="card transform-3D">
-			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
-		<h3>Origen de la transformacion</h3>
-		<article class="card transform-origin">
-			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
-		<h3>Flip Cards</h3>
-		<article class="flip-card-1">
-			<div class="flip-face flip-front">
-				<img src="https://picsum.photos/300/200" alt="Random Photo">
-			</div>
-			<div class="flip-face flip-back">
-				<img src="https://picsum.photos/300/201" alt="Random Photo">
-			</div>
-		</article>
-		<article class="flip-card-2">
-			<div class="flip-face flip-front">
-				<img src="https://picsum.photos/300/200" alt="Random Photo">
-			</div>
-			<div class="flip-face flip-back">
-				<img src="https://picsum.photos/300/201" alt="Random Photo">
-			</div>
-		</article>
-	</section>
-	<hr>
-	<section class="animations">
-		<h2>Animaciones</h2>
-		<article class="card my-animation">
-			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
+		</div>
+		<div class="flip-face flip-back">
+			<img src="https://picsum.photos/300/201" alt="Random Photo">
+		</div>
+	</article>
+</section>
+<hr>
+<section class="animations">
+	<h2>Animaciones</h2>
+	<article class="card my-animation">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
 
-		<article class="card my-animation-2">
-			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
+	<article class="card my-animation-2">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
 
-		<article class="card multiple-animation">
-			<img src="https://picsum.photos/300/200" alt="Random Photo">
-		</article>
-	</section>
+	<article class="card multiple-animation">
+		<img src="https://picsum.photos/300/200" alt="Random Photo">
+	</article>
+</section>
+<hr>
+<section class="motion-examples">
+	<h2>Ejemplos</h2>
+	<h3>FadeIn and FadeOut</h3>
+	<div class="fade-in">😎</div>
+	<div class="fade-out">🤩</div>
+	<h3>Shake</h3>
+	<div class="shake">😖</div>
+	<h3>Pulsaciones</h3>
+	<div class="pulse">💘</div>
+	<div class="pulse">Hola</div>
+	<div class="pulse">Eres el CSS de mi HTML xd</div>
+	<h3>Dibujando y animando con CSS</h3>
+	<h4>Corazon</h4>
+	<div class="heart pulse"></div>
+	<h4>Spinner</h4>
+	<div class="spinner"></div>
+	<h3>Botones Animados</h3>
+	<div>
+		<button class="btn anim-bottom to-left">Animacion Izquierda</button>
+		<button class="btn anim-bottom to-center">Animacion Centro</button>
+		<button class="btn anim-bottom to-right">Animacion Derecha</button>
+		<button class="btn anim-bg-gradient">Fondo con Gradiente</button>
+	</div>
+	<h3>Menu de Pestañas</h3>
+
+	<nav class="tabs-menu">
+		<input type="radio" name="tabs" id="tab-1">
+		<label for="tab-1">Sección 1</label>
+		<input type="radio" name="tabs" id="tab-2">
+		<label for="tab-2">Sección 2</label>
+		<input type="radio" name="tabs" id="tab-3">
+		<label for="tab-3">Sección 3</label>
+		<input type="radio" name="tabs" id="tab-4">
+		<label for="tab-4">Sección 4</label>
+		<div class="tab-bg-hover"></div>
+	</nav>
+	<h3>Menu Off Canvas</h3>
+	<input type="checkbox" class="off-canvas-btn" name="" id="">
+	<label class="off-canvas-burger"></label>
+	<nav class="off-canvas-menu">
+		<div class="off-canvas-menu-container">
+			<a href="" class="off-canvas-link">Section 1</a>
+			<a href="" class="off-canvas-link">Section 2</a>
+			<a href="" class="off-canvas-link">Section 3</a>
+			<a href="" class="off-canvas-link">Section 4</a>
+			<a href="" class="off-canvas-link">Section 5</a>
+		</div>
+	</nav>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
